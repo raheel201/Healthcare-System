@@ -1,0 +1,72 @@
+export const patients = [
+  {
+    id: 1,
+    name: 'John Smith',
+    age: 45,
+    gender: 'Male',
+    phone: '+1-555-0123',
+    email: 'john.smith@email.com',
+    address: '123 Main St, City, State 12345',
+    status: 'active',
+    type: 'regular',
+    lastVisit: '2024-01-15',
+    condition: 'Diabetes',
+    doctor: 'Dr. Johnson'
+  },
+  {
+    id: 2,
+    name: 'Sarah Wilson',
+    age: 32,
+    gender: 'Female',
+    phone: '+1-555-0124',
+    email: 'sarah.wilson@email.com',
+    address: '456 Oak Ave, City, State 12345',
+    status: 'active',
+    type: 'premium',
+    lastVisit: '2024-01-20',
+    condition: 'Hypertension',
+    doctor: 'Dr. Smith'
+  },
+  {
+    id: 3,
+    name: 'Michael Brown',
+    age: 58,
+    gender: 'Male',
+    phone: '+1-555-0125',
+    email: 'michael.brown@email.com',
+    address: '789 Pine St, City, State 12345',
+    status: 'inactive',
+    type: 'regular',
+    lastVisit: '2023-12-10',
+    condition: 'Heart Disease',
+    doctor: 'Dr. Davis'
+  },
+  {
+    id: 4,
+    name: 'Emily Davis',
+    age: 28,
+    gender: 'Female',
+    phone: '+1-555-0126',
+    email: 'emily.davis@email.com',
+    address: '321 Elm St, City, State 12345',
+    status: 'active',
+    type: 'premium',
+    lastVisit: '2024-01-18',
+    condition: 'Asthma',
+    doctor: 'Dr. Wilson'
+  },
+  {
+    id: 5,
+    name: 'Robert Johnson',
+    age: 67,
+    gender: 'Male',
+    phone: '+1-555-0127',
+    email: 'robert.johnson@email.com',
+    address: '654 Maple Ave, City, State 12345',
+    status: 'active',
+    type: 'regular',
+    lastVisit: '2024-01-22',
+    condition: 'Arthritis',
+    doctor: 'Dr. Brown'
+  }
+];
