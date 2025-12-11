@@ -10,7 +10,7 @@ const Topbar = memo(() => {
         {/* Logo */}
         <div className="flex items-center">
           <div className="flex items-center space-x-2">
-            <img src="/src/assets/Logo.jpg" alt="Logo" className="w-8 h-8" />
+            <img src="/Logo.jpg" alt="Logo" className="w-8 h-8" />
             <h1 className="text-xl font-bold text-teal-600 dark:text-teal-400">
               Jhilmil Homecare
             </h1>
