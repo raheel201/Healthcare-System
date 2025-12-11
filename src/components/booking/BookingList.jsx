@@ -43,7 +43,7 @@ const BookingList = memo(() => {
     <div className="space-y-6">
       {bookings.map(booking => (
         <Card key={booking.id}>
-          <div className="flex items-start justify-between">
+          <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-4">
             <div className="flex-1">
               <div className="flex items-center space-x-3 mb-2">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
@@ -76,7 +76,7 @@ const BookingList = memo(() => {
               )}
             </div>
             
-            <div className="flex flex-col space-y-2 ml-4">
+            <div className="flex flex-col lg:flex-row lg:space-y-0 lg:space-x-2 space-y-2 lg:ml-4">
               {booking.status === 'pending' && (
                 <>
                   <Button

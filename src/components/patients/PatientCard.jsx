@@ -15,7 +15,7 @@ const PatientCard = memo(({ patient, onViewDetails }) => {
 
   return (
     <Card>
-      <div className="flex items-start justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
             {patient.name}
@@ -30,8 +30,8 @@ const PatientCard = memo(({ patient, onViewDetails }) => {
             Last visit: {patient.lastVisit}
           </p>
         </div>
-        <div className="flex flex-col items-end space-y-2">
-          <div className="flex space-x-2">
+        <div className="flex flex-col sm:items-end space-y-2">
+          <div className="flex flex-wrap gap-2">
             <span className={`px-2 py-1 text-xs font-medium rounded-full ${statusColors[patient.status]}`}>
               {patient.status}
             </span>
@@ -39,7 +39,7 @@ const PatientCard = memo(({ patient, onViewDetails }) => {
               {patient.type}
             </span>
           </div>
-          <Button size="sm" onClick={() => onViewDetails(patient)}>
+          <Button size="sm" onClick={() => onViewDetails(patient)} className="w-full sm:w-auto">
             View Details
           </Button>
         </div>

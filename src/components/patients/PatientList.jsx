@@ -41,7 +41,7 @@ const PatientList = memo(() => {
         onTypeChange={setTypeFilter}
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 gap-4 lg:gap-6">
         {filteredPatients.map(patient => (
           <PatientCard
             key={patient.id}
@@ -66,7 +66,7 @@ const PatientList = memo(() => {
       >
         {selectedPatient && (
           <div className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
                 <p className="text-gray-900 dark:text-gray-100">{selectedPatient.name}</p>
@@ -83,11 +83,11 @@ const PatientList = memo(() => {
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Phone</label>
                 <p className="text-gray-900 dark:text-gray-100">{selectedPatient.phone}</p>
               </div>
-              <div className="col-span-2">
+              <div className="sm:col-span-2">
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
                 <p className="text-gray-900 dark:text-gray-100">{selectedPatient.email}</p>
               </div>
-              <div className="col-span-2">
+              <div className="sm:col-span-2">
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Address</label>
                 <p className="text-gray-900 dark:text-gray-100">{selectedPatient.address}</p>
               </div>

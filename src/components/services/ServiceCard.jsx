@@ -41,7 +41,7 @@ const ServiceCard = memo(({ service, onBookService }) => {
           </div>
         </div>
         
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
           <span className={`text-sm font-medium ${service.available ? 'text-green-600' : 'text-red-600'}`}>
             {service.available ? 'Available' : 'Unavailable'}
           </span>
@@ -49,6 +49,7 @@ const ServiceCard = memo(({ service, onBookService }) => {
             size="sm"
             disabled={!service.available}
             onClick={() => onBookService(service)}
+            className="w-full sm:w-auto"
           >
             Book Service
           </Button>

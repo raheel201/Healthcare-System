@@ -161,11 +161,11 @@ const BookingForm = memo(({ service, onClose, onSuccess }) => {
         rows={3}
       />
 
-      <div className="flex justify-end space-x-3 pt-4">
-        <Button type="button" variant="secondary" onClick={onClose}>
+      <div className="flex flex-col sm:flex-row justify-end gap-3 pt-4">
+        <Button type="button" variant="secondary" onClick={onClose} className="w-full sm:w-auto">
           Cancel
         </Button>
-        <Button type="submit" disabled={isSubmitting}>
+        <Button type="submit" disabled={isSubmitting} className="w-full sm:w-auto">
           {isSubmitting ? 'Booking...' : 'Book Appointment'}
         </Button>
       </div>
