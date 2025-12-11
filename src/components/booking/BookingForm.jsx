@@ -33,7 +33,6 @@ const BookingForm = memo(({ service, onClose, onSuccess }) => {
       ...prev,
       [field]: e.target.value
     }));
-    // Clear error when user starts typing
     if (errors[field]) {
       setErrors(prev => ({
         ...prev,
@@ -81,7 +80,6 @@ const BookingForm = memo(({ service, onClose, onSuccess }) => {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
 
       const booking = {

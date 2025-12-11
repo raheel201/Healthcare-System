@@ -12,7 +12,6 @@ const persistConfig = {
 // Persisted reducer
 const persistedReducer = persistReducer(persistConfig, bookingReducer);
 
-// Configure store
 export const store = configureStore({
   reducer: {
     bookings: persistedReducer,

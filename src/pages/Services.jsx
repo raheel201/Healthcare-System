@@ -18,22 +18,18 @@ const Services = memo(() => {
   }, []);
 
   const handleBookingSuccess = useCallback(() => {
-    // You could show a success message here
     console.log('Booking successful!');
   }, []);
 
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div>
         <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Services</h1>
         <p className="text-gray-600 dark:text-gray-400">Browse and book our healthcare services</p>
       </div>
 
-      {/* Service List */}
       <ServiceList onBookService={handleBookService} />
 
-      {/* Booking Modal */}
       <Modal
         isOpen={showBookingForm}
         onClose={handleCloseBookingForm}

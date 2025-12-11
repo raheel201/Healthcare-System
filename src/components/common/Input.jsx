@@ -22,7 +22,7 @@ const Input = memo(({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className={`input-field ${className} ${error ? 'border-red-500' : ''}`}
+        className={`input-field outline-none ${className} ${error ? 'border-red-500' : ''}`}
         {...props}
       />
       {error && (

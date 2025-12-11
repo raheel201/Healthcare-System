@@ -20,10 +20,9 @@ const Select = memo(({
       <select
         value={value}
         onChange={onChange}
-        className={`input-field ${className} ${error ? 'border-red-500' : ''}`}
+        className={`input-field outline-none ${className} ${error ? 'border-red-500' : ''}`}
         {...props}
       >
-        <option value="">{placeholder}</option>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}

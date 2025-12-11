@@ -53,7 +53,6 @@ const DashboardCharts = memo(({ filter }) => {
     },
   }), []);
 
-  // Filter data based on selected period
   const filteredData = useMemo(() => {
     return getChartData(filter);
   }, [filter]);

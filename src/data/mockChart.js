@@ -3,7 +3,6 @@ export const getChartData = (filter) => {
   const multiplier = filter === '7' ? 0.3 : filter === '30' ? 0.7 : 1;
   
   return {
-  // Line chart - Patient visits over time
   patientVisits: {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     datasets: [

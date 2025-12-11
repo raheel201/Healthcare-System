@@ -40,7 +40,6 @@ const PatientDetail = memo(() => {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Patient Details</h1>
@@ -51,7 +50,6 @@ const PatientDetail = memo(() => {
         </Button>
       </div>
 
-      {/* Patient Information */}
       <Card title="Patient Information">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">

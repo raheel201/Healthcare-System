@@ -22,7 +22,7 @@ const TextArea = memo(({
         value={value}
         onChange={onChange}
         rows={rows}
-        className={`input-field resize-none ${className} ${error ? 'border-red-500' : ''}`}
+        className={`input-field resize-none outline-none ${className} ${error ? 'border-red-500' : ''}`}
         {...props}
       />
       {error && (

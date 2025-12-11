@@ -19,7 +19,6 @@ const Dashboard = memo(() => {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Dashboard</h1>
@@ -35,7 +34,6 @@ const Dashboard = memo(() => {
         </div>
       </div>
 
-      {/* Stats Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {statsData.map((stat, index) => (
           <StatCard
@@ -49,7 +47,6 @@ const Dashboard = memo(() => {
         ))}
       </div>
 
-      {/* Charts */}
       <DashboardCharts filter={timeFilter} />
     </div>
   );
