@@ -172,12 +172,6 @@ The application uses a teal color scheme. To change colors, update:
 3. Update navigation in `Sidebar.jsx`
 4. Add Redux slices if state management needed
 
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
 
 ## 🤝 Contributing
 
@@ -187,13 +181,3 @@ The application uses a teal color scheme. To change colors, update:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
-- Tailwind CSS for the utility-first CSS framework
-- Chart.js for beautiful charts
-- Redux team for state management tools
